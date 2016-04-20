@@ -1,19 +1,19 @@
 @echo off
-rem this isn't the exact code of either of the programs
-title slui.exe terminator
-rem echo waiting...
-rem timeout 250
+title SLUI.EXE KILLER - LOADING
+echo SLUI.EXE KILLER (visible)
 :loop
 tasklist /fi "imagename eq slui.exe" | find /i "slui.exe" > nul
 if not errorlevel 1 (
-echo %time%: slui found 
+title SLUI.EXE KILLER - PROCESS IS FOUND
 taskkill /f /im "slui.exe"
-echo Pausing for 420 seconds.
+rem start killed.bat
+echo %time%: slui WAS found
 timeout 420
 goto loop
 ) else (
-echo %time%: slui NOT found :)
-echo %time%: Pausing for 10 seconds.
-timeout 10
+title SLUI.EXE KILLER - PROCESS ISN'T FOUND
+cls
+echo %time%: slui NOT found 
+timeout 2 >nul
 goto loop
 )
