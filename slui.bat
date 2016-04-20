@@ -1,17 +1,14 @@
 @echo off
+rem this isn't the exact code of either of the programs, but it uses the same commands.
 title slui.exe terminator
-msg * Slui terminator is running in the background.
+rem msg * Slui terminator is running in the background.
+rem timeout 300
 :loop
 tasklist /fi "imagename eq slui.exe" | find /i "slui.exe" > nul
 if not errorlevel 1 (
 echo %time%: slui found 
 taskkill /f /im "slui.exe"
-echo @echo off >> temporaryfile.bat
-echo @echo off >> tempfile.bat
-echo title slui found >> tempfile.bat
-echo slui was found at %time%, and was terminated. >> tempfile.bat
 echo timeout 60 >> tempfile.bat
-start tempfile.bat
 echo Pausing for 420 seconds.
 timeout 420 >nul
 del tempfile.bat
