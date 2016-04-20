@@ -8,3 +8,5 @@ notinvisible.exe runs in a default batch window, and is visible in the taskbar, 
 invisible.exe runs but is invisible, the only messages you will get is when it starts up and when it finds slui. 
 
 I'd reccomend putting this in your startup folder, because this doesn't do it for you.
+
+Works on Windows 7 Professional Version 6.1 (Build 6501: Service Pack 1)
