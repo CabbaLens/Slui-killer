@@ -1,11 +1,11 @@
 # Slui-killer
 Stops the windows is not genuine popup
 
-There are 2 versions of slui killer, notinvisible.exe and invisible.exe. 
+There are 2 versions of slui killer, not invisible and invisible
 
-notinvisible.exe runs in a default batch window, and is visible in the taskbar, ect.
+not invisible runs in a default batch window, and is visible in the taskbar, ect.
 
-invisible.exe runs but is invisible, the only messages you will get is when it starts up and when it finds slui. 
+invisible runs but is invisible, the only message you will get is when it finds slui. (pops up for 5 seconds)
 
 I'd reccomend putting this in your startup folder, because this doesn't do it for you.
 
